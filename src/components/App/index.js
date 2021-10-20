@@ -2,7 +2,7 @@ import './style.css'
 import React from 'react'
 import Portrait from '../Portrait'
 
-const HERO_DECLARATIONS_URL = '/heroes.json'
+const HERO_DECLARATIONS_URL = 'heroes.json'
 
 export default function App () {
   const [heroes, setHeroes] = React.useState([])
