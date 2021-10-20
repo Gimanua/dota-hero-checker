@@ -10,6 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Build and Push
+    env:
+      PUBLIC_URL: https://gimanua.github.io/dota-hero-checker
     steps:
       - name: git-checkout
         uses: actions/checkout@v2
