@@ -1,0 +1,16 @@
+.Modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.Modal-content {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(2, 13, 50);
+  border-radius: 1vw;
+  padding: 1vw;
+}

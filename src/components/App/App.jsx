@@ -1,27 +1,31 @@
 import './App.css'
 import React from 'react'
 import Portrait from '../Portrait'
-
-const HERO_DECLARATIONS_URL = 'heroes.json'
+import Header from '../Header'
+import Heroes from '../../assets/heroes.json'
+import Modal from '../Modal'
 
 function App () {
-  const [heroes, setHeroes] = React.useState([])
-
-  React.useEffect(() => {
-    window.fetch(HERO_DECLARATIONS_URL)
-      .then(response => response.json())
-      .then(heroes => { setHeroes(heroes) })
-      .catch(error => { console.error(error) })
-  }, [])
+  const [randomHero, setRandomHero] = React.useState(null)
 
   return (
     <div className='App'>
-      {heroes.map(hero => (
+      <Header onRandomUncheckedHero={hero => { setRandomHero(hero) }} />
+      {Heroes.map(hero => (
         <Portrait
           key={hero.name}
           name={hero.name}
           imageSource={hero.imageSource}
+          interactable
         />))}
+      {randomHero != null &&
+        <Modal onClose={() => { setRandomHero(null) }}>
+          <Portrait
+            name={randomHero.name}
+            imageSource={randomHero.imageSource}
+            interactable={false}
+          />
+        </Modal>}
     </div>
   )
 }

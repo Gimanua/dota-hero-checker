@@ -2,18 +2,20 @@ import './Portrait.css'
 import React from 'react'
 import CheckImage from '../../assets/images/check.png'
 import classNames from 'classnames'
+import { heroIsChecked, setHeroChecked } from '../../utils'
 
 /**
  * A portrait of a hero
  * @param {Object} props
  * @param {String} props.name The name of the hero
  * @param {String} props.imageSource The source of the image of the hero
+ * @param {Boolean} props.interactable If the portrait should be clickable to toggle checked status
  */
-export default function Portrait ({ name, imageSource }) {
-  const [checked, setChecked] = React.useState(window.localStorage.getItem(name) === 'true')
+function Portrait ({ name, imageSource, interactable }) {
+  const [checked, setChecked] = React.useState(heroIsChecked(name))
 
   React.useEffect(() => {
-    window.localStorage.setItem(name, checked)
+    setHeroChecked(name, checked)
   }, [name, checked])
 
   const portraitClasses = classNames('Portrait', {
@@ -21,10 +23,12 @@ export default function Portrait ({ name, imageSource }) {
   })
 
   return (
-    <div className={portraitClasses} onClick={() => { setChecked(!checked) }}>
+    <div className={portraitClasses} onClick={interactable ? () => { setChecked(!checked) } : undefined}>
       <img className='Portrait-image' src={imageSource} alt={name} />
       {checked && <img className='Portrait-checked' src={CheckImage} alt='Checkmark' />}
       <strong className='Portrait-name'>{name}</strong>
     </div>
   )
 }
+
+export default Portrait
