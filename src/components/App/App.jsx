@@ -15,6 +15,7 @@ function App () {
         <Portrait
           key={hero.name}
           name={hero.name}
+          internalName={hero.internalName}
           imageSource={hero.imageSource}
           interactable
         />))}
@@ -22,6 +23,7 @@ function App () {
         <Modal onClose={() => { setRandomHero(null) }}>
           <Portrait
             name={randomHero.name}
+            internalName={randomHero.internalName}
             imageSource={randomHero.imageSource}
             interactable={false}
           />

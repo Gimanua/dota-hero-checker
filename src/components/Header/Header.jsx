@@ -18,7 +18,7 @@ function Header ({ onRandomUncheckedHero }) {
 
   return (
     <header className='Header'>
-      <h1>Dota Hero Checker</h1>
+      <h1>Dota Hero Checker v1.0.0</h1>
       <div className='Header-actions'>
         <button className='Header-actionButton' onClick={() => { randomUncheckedHero() }}>Random Unchecked Hero</button>
       </div>

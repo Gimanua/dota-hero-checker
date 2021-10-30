@@ -8,15 +8,16 @@ import { heroIsChecked, setHeroChecked } from '../../utils'
  * A portrait of a hero
  * @param {Object} props
  * @param {String} props.name The name of the hero
+ * @param {String} props.internalName The internal name of the hero
  * @param {String} props.imageSource The source of the image of the hero
  * @param {Boolean} props.interactable If the portrait should be clickable to toggle checked status
  */
-function Portrait ({ name, imageSource, interactable }) {
-  const [checked, setChecked] = React.useState(heroIsChecked(name))
+function Portrait ({ name, internalName, imageSource, interactable }) {
+  const [checked, setChecked] = React.useState(heroIsChecked(internalName))
 
   React.useEffect(() => {
-    setHeroChecked(name, checked)
-  }, [name, checked])
+    setHeroChecked(internalName, checked)
+  }, [internalName, checked])
 
   const portraitClasses = classNames('Portrait', {
     'Portrait--checked': checked

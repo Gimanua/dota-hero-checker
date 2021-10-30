@@ -3,10 +3,10 @@
   flex-direction: column;
   align-items: center;
   margin: 0.25vw;
+  width: 8vw;
 }
 
 .Portrait-image {
-  width: 8vw;
   height: 4.5vw;
 }
 
@@ -17,5 +17,5 @@
 }
 
 .Portrait-name {
-  font-size: 1em;
+  font-size: 0.8vw;
 }
