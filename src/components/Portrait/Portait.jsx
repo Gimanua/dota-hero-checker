@@ -2,7 +2,7 @@ import './Portrait.css'
 import React from 'react'
 import CheckImage from '../../assets/images/check.png'
 import classNames from 'classnames'
-import { heroIsChecked, setHeroChecked } from '../../utils'
+import { CheckedHeroesContext } from '../CheckedHeroesProvider/CheckedHeroesProvider'
 
 /**
  * A portrait of a hero
@@ -13,18 +13,15 @@ import { heroIsChecked, setHeroChecked } from '../../utils'
  * @param {Boolean} props.interactable If the portrait should be clickable to toggle checked status
  */
 function Portrait ({ name, internalName, imageSource, interactable }) {
-  const [checked, setChecked] = React.useState(heroIsChecked(internalName))
+  const [checkedHeroes, updateCheckedHero] = React.useContext(CheckedHeroesContext)
 
-  React.useEffect(() => {
-    setHeroChecked(internalName, checked)
-  }, [internalName, checked])
-
+  const checked = checkedHeroes.has(internalName)
   const portraitClasses = classNames('Portrait', {
     'Portrait--checked': checked
   })
 
   return (
-    <div className={portraitClasses} onClick={interactable ? () => { setChecked(!checked) } : undefined}>
+    <div className={portraitClasses} onClick={interactable ? () => { updateCheckedHero(internalName, !checked) } : undefined}>
       <img className='Portrait-image' src={imageSource} alt={name} />
       {checked && <img className='Portrait-checked' src={CheckImage} alt='Checkmark' />}
       <strong className='Portrait-name'>{name}</strong>

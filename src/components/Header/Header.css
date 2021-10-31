@@ -9,3 +9,11 @@
 .Header-actions {
   display: flex;
 }
+
+.Header-actionButton-export {
+  display: none;
+}
+
+.Header-actionButton-import {
+  display: none;
+}
