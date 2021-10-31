@@ -2,6 +2,7 @@ import './Header.css'
 import React from 'react'
 import Heroes from '../../assets/heroes.json'
 import { heroIsChecked } from '../../utils'
+import { version } from '../../../package.json'
 
 /**
  * Page header
@@ -18,7 +19,7 @@ function Header ({ onRandomUncheckedHero }) {
 
   return (
     <header className='Header'>
-      <h1>Dota Hero Checker v1.0.0</h1>
+      <h1>Dota Hero Checker v{version}</h1>
       <div className='Header-actions'>
         <button className='Header-actionButton' onClick={() => { randomUncheckedHero() }}>Random Unchecked Hero</button>
       </div>
