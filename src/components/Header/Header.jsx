@@ -11,9 +11,9 @@ import { version } from '../../../package.json'
  */
 function Header ({ onRandomUncheckedHero }) {
   function randomUncheckedHero () {
-    const uncheckHeroes = Heroes.filter(hero => heroIsChecked(hero.name) === false)
-    if (uncheckHeroes.length === 0) return
-    const randomUncheckedHero = uncheckHeroes[Math.floor(Math.random() * uncheckHeroes.length)]
+    const uncheckedHeroes = Heroes.filter(hero => heroIsChecked(hero.internalName) === false)
+    if (uncheckedHeroes.length === 0) return
+    const randomUncheckedHero = uncheckedHeroes[Math.floor(Math.random() * uncheckedHeroes.length)]
     onRandomUncheckedHero(randomUncheckedHero)
   }
 
