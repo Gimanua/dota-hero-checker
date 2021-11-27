@@ -10,7 +10,7 @@ import { CheckedHeroesContext } from '../CheckedHeroesProvider/CheckedHeroesProv
  * @param {Function} props.onRandomUncheckedHero Callback for when a random unchecked hero is selected
  */
 function Header ({ onRandomUncheckedHero }) {
-  const [checkedHeroes, ,setCheckedHeroesFromArray] = React.useContext(CheckedHeroesContext)
+  const [checkedHeroes, , setCheckedHeroesFromArray] = React.useContext(CheckedHeroesContext)
   /**
    * @type {React.MutableRefObject<HTMLAnchorElement>}
    */
@@ -66,6 +66,7 @@ function Header ({ onRandomUncheckedHero }) {
   return (
     <header className='Header'>
       <h1>Dota Hero Checker v{version}</h1>
+      <h2>{checkedHeroes.size} / {getAllHeroes().length} checked heroes</h2>
       <div className='Header-actions'>
         <button className='Header-actionButton' onClick={() => { randomUncheckedHero() }}>Random Unchecked Hero</button>
         <button className='Header-actionButton' onClick={() => { clickExportElement() }}>
