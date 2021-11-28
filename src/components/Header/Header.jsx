@@ -63,10 +63,22 @@ function Header ({ onRandomUncheckedHero }) {
       .catch(error => { console.error(error) })
   }
 
+  /**
+   * @param {Number} percentage
+   */
+  function roundPercentage (percentage) {
+    return `~${percentage.toFixed(1)}`
+  }
+
+  const checkedHeroesCount = checkedHeroes.size
+  const totalHeroesCount = getAllHeroes().length
+  const percentageChecked = checkedHeroesCount / totalHeroesCount * 100
+  const hasDecimals = Number.isInteger(percentageChecked) === false
+
   return (
     <header className='Header'>
       <h1>Dota Hero Checker v{version}</h1>
-      <h2>{checkedHeroes.size} / {getAllHeroes().length} checked heroes</h2>
+      <h2>{checkedHeroesCount} / {totalHeroesCount} checked heroes ({hasDecimals ? roundPercentage(percentageChecked) : percentageChecked}%)</h2>
       <div className='Header-actions'>
         <button className='Header-actionButton' onClick={() => { randomUncheckedHero() }}>Random Unchecked Hero</button>
         <button className='Header-actionButton' onClick={() => { clickExportElement() }}>
