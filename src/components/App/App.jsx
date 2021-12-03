@@ -6,8 +6,35 @@ import Heroes from '../../assets/heroes.json'
 import Modal from '../Modal'
 import CheckedHeroesProvider from '../CheckedHeroesProvider'
 
+const SEARCH_KEY_TIMEOUT_MS = 1500
+
 function App () {
   const [randomHero, setRandomHero] = React.useState(null)
+  const [search, setSearch] = React.useState('')
+
+  React.useEffect(function setupKeyListener () {
+    document.addEventListener('keydown', handleKeyDown)
+
+    let keyTimeoutId
+    let timedOut = false
+    /**
+     * @param {KeyboardEvent} e
+     */
+    function handleKeyDown (e) {
+      clearTimeout(keyTimeoutId)
+      if (timedOut) {
+        timedOut = false
+        setSearch(e.key === 'Backspace' ? '' : e.key)
+      } else {
+        setSearch(oldSearch => e.key === 'Backspace' ? oldSearch.slice(0, -1) : oldSearch + e.key)
+      }
+      keyTimeoutId = setTimeout(() => { timedOut = true }, SEARCH_KEY_TIMEOUT_MS)
+    }
+
+    return function cleanup () {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
 
   return (
     <div className='App'>
@@ -20,6 +47,7 @@ function App () {
             internalName={hero.internalName}
             imageSource={hero.imageSource}
             interactable
+            search={search && (hero.name.toLowerCase().includes(search) ? 'match' : 'miss')}
           />))}
         {randomHero != null &&
           <Modal onClose={() => { setRandomHero(null) }}>

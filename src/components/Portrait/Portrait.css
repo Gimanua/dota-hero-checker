@@ -6,6 +6,14 @@
   width: 8vw;
 }
 
+.Portrait--searchMatch {
+  filter: drop-shadow(0 0 0.5vw purple);
+}
+
+.Portrait--searchMiss {
+  filter: grayscale(100%) opacity(10%);
+}
+
 .Portrait-image {
   height: 4.5vw;
 }
@@ -14,6 +22,10 @@
   position: absolute;
   width: 8vw;
   height: 4.5vw;
+}
+
+.Portrait--searchMatch .Portrait-name {
+  color: white;
 }
 
 .Portrait-name {
