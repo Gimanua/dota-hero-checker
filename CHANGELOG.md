@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2021-12-04
+### Added
+- Ability to search for heroes by simply typing keys, all heroes which contain the search query in their name is highlighted
+and all else grayed out.
+If you wait for more than 1.5 seconds until your next key press the search query will be reset.
+All keys are considered valid for the search except backspace which instead will remove your last typed key.
+- Version in header colored blue and displays this changelog when clicked.
+
+### Changed
+- Modals (the "pop-ups") are no longer closed when clicking inside of their content.
+
 ## [1.3.0] - 2021-11-28
 ### Added
 - Percentage of checked heroes
