@@ -8,10 +8,32 @@
 
 .Modal-content {
   position: fixed;
+  max-height: 90vh;
+  overflow-y: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(2, 13, 50);
   border-radius: 1vw;
   padding: 1vw;
+}
+
+.Modal-content--changelog {
+  line-height: 1.6;
+}
+
+.Modal-content--changelog li {
+  padding-left: 3%;
+}
+
+.Modal-content--changelog h1 {
+  text-align: center;
+  font-size: 4em;
+  margin: 0 0 0.2em 0;
+}
+
+.Modal-content--changelog h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.8em;
 }

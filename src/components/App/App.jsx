@@ -50,7 +50,7 @@ function App () {
   return (
     <div className='App'>
       {showChangelog &&
-        <Modal onClose={() => { setShowChangelog(false) }}>
+        <Modal onClose={() => { setShowChangelog(false) }} specialStyling='changelog'>
           <Markdown>{changelog}</Markdown>
         </Modal>}
       <CheckedHeroesProvider>
