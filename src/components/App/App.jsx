@@ -5,12 +5,23 @@ import Header from '../Header'
 import Heroes from '../../assets/heroes.json'
 import Modal from '../Modal'
 import CheckedHeroesProvider from '../CheckedHeroesProvider'
+import Markdown from 'markdown-to-jsx'
+import ChangelogURL from '../../assets/CHANGELOG.md'
 
 const SEARCH_KEY_TIMEOUT_MS = 1500
 
 function App () {
   const [randomHero, setRandomHero] = React.useState(null)
   const [search, setSearch] = React.useState('')
+  const [showChangelog, setShowChangelog] = React.useState(false)
+  const [changelog, setChangelog] = React.useState(null)
+
+  React.useEffect(function loadChangelog () {
+    window.fetch(ChangelogURL)
+      .then(response => response.text())
+      .then(setChangelog)
+      .catch(error => { console.error(error) })
+  }, [])
 
   React.useEffect(function setupKeyListener () {
     document.addEventListener('keydown', handleKeyDown)
@@ -38,8 +49,15 @@ function App () {
 
   return (
     <div className='App'>
+      {showChangelog &&
+        <Modal onClose={() => { setShowChangelog(false) }}>
+          <Markdown>{changelog}</Markdown>
+        </Modal>}
       <CheckedHeroesProvider>
-        <Header onRandomUncheckedHero={hero => { setRandomHero(hero) }} />
+        <Header
+          onRandomUncheckedHero={hero => { setRandomHero(hero) }}
+          onVersionClick={() => { if (changelog) setShowChangelog(true) }}
+        />
         {Heroes.map(hero => (
           <Portrait
             key={hero.name}

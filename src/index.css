@@ -11,3 +11,7 @@ html {
 body {
   background-color: #101010;
 }
+
+ul {
+  list-style-position: inside;
+}

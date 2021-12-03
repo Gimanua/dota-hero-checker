@@ -8,7 +8,7 @@ import React from 'react'
 function Modal ({ children, onClose }) {
   return (
     <div className='Modal' onClick={() => { onClose() }}>
-      <div className='Modal-content'>
+      <div className='Modal-content' onClick={e => { e.stopPropagation() }}>
         {children}
       </div>
     </div>

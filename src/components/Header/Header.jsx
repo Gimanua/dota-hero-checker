@@ -8,8 +8,9 @@ import { CheckedHeroesContext } from '../CheckedHeroesProvider/CheckedHeroesProv
  * Page header
  * @param {Object} props
  * @param {Function} props.onRandomUncheckedHero Callback for when a random unchecked hero is selected
+ * @param {Function} props.onVersionClick Callback for when the project version is clicked
  */
-function Header ({ onRandomUncheckedHero }) {
+function Header ({ onRandomUncheckedHero, onVersionClick }) {
   const [checkedHeroes, , setCheckedHeroesFromArray] = React.useContext(CheckedHeroesContext)
   /**
    * @type {React.MutableRefObject<HTMLAnchorElement>}
@@ -77,7 +78,7 @@ function Header ({ onRandomUncheckedHero }) {
 
   return (
     <header className='Header'>
-      <h1>Dota Hero Checker v{version}</h1>
+      <h1>Dota Hero Checker <span className='Header-projectVersion' onClick={() => { onVersionClick() }}>v{version}</span></h1>
       <h2>{checkedHeroesCount} / {totalHeroesCount} checked heroes ({hasDecimals ? roundPercentage(percentageChecked) : percentageChecked}%)</h2>
       <div className='Header-actions'>
         <button className='Header-actionButton' onClick={() => { randomUncheckedHero() }}>Random Unchecked Hero</button>

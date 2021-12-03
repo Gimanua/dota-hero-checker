@@ -6,6 +6,11 @@
   margin-bottom: 2vh;
 }
 
+.Header-projectVersion {
+  cursor: pointer;
+  color: blue;
+}
+
 .Header-actions {
   display: flex;
 }
