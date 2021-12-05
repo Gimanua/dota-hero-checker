@@ -1,0 +1,19 @@
+.SearchQueryText {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 8em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+  pointer-events: none;
+  animation: fadeOut 1.5s ease-in forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

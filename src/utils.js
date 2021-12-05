@@ -30,3 +30,11 @@ export function getSavedCheckedHeroesInternalNamesSet () {
 export function getAllHeroes () {
   return Heroes
 }
+
+/**
+ * Determines if a key is printable, some keys like Caps Lock and Shift are not themselves printable
+ * @param {String} key
+ */
+export function isPrintableKey (key) {
+  return key.length === 1
+}
