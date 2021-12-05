@@ -10,5 +10,5 @@ A common use case would be when doing an all hero challenge.
 
 ## Get started
 Run these commands in a terminal at the root of this project
-* ```npm run install```
+* ```npm install```
 * ```npm run start```
