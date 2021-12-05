@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and deploy to Github Pages
     env:
+      NODE_ENV: production
       PUBLIC_URL: https://gimanua.github.io/dota-hero-checker
     steps:
       - name: Checkout
