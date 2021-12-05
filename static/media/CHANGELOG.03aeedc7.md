@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2021-12-05
+### Added
+- Text displaying what your current search query is. Gradually fades out during 1.5 seconds to match the timeout of the search query.
+
+### Changed
+- When searching, heroes will now only be highlighted when their name includes the search query IF the search query contains 2 or more characters. If the search query is only 1 character the hero will only be highlighted if their name starts with that character.
+- Only printable characters are now considered valid for the search query (before if you pressed Shift it would search for that)
+
 ## [1.4.0] - 2021-12-04
 ### Added
 - Ability to search for heroes by simply typing keys, all heroes which contain the search query in their name is highlighted

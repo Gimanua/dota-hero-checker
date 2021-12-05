@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "https://gimanua.github.io/dota-hero-checker/static/css/main.8861167d.chunk.css",
-    "main.js": "https://gimanua.github.io/dota-hero-checker/static/js/main.4373d77b.chunk.js",
-    "main.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/main.4373d77b.chunk.js.map",
+    "main.css": "https://gimanua.github.io/dota-hero-checker/static/css/main.e6ce7d04.chunk.css",
+    "main.js": "https://gimanua.github.io/dota-hero-checker/static/js/main.2a066bd1.chunk.js",
+    "main.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/main.2a066bd1.chunk.js.map",
     "runtime-main.js": "https://gimanua.github.io/dota-hero-checker/static/js/runtime-main.1cc8d281.js",
     "runtime-main.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/runtime-main.1cc8d281.js.map",
     "static/css/2.679831fc.chunk.css": "https://gimanua.github.io/dota-hero-checker/static/css/2.679831fc.chunk.css",
@@ -10,15 +10,15 @@
     "static/js/2.4b6ff0c4.chunk.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/2.4b6ff0c4.chunk.js.map",
     "index.html": "https://gimanua.github.io/dota-hero-checker/index.html",
     "static/css/2.679831fc.chunk.css.map": "https://gimanua.github.io/dota-hero-checker/static/css/2.679831fc.chunk.css.map",
-    "static/css/main.8861167d.chunk.css.map": "https://gimanua.github.io/dota-hero-checker/static/css/main.8861167d.chunk.css.map",
+    "static/css/main.e6ce7d04.chunk.css.map": "https://gimanua.github.io/dota-hero-checker/static/css/main.e6ce7d04.chunk.css.map",
     "static/js/2.4b6ff0c4.chunk.js.LICENSE.txt": "https://gimanua.github.io/dota-hero-checker/static/js/2.4b6ff0c4.chunk.js.LICENSE.txt",
-    "static/media/CHANGELOG.da937fb4.md": "https://gimanua.github.io/dota-hero-checker/static/media/CHANGELOG.da937fb4.md"
+    "static/media/CHANGELOG.03aeedc7.md": "https://gimanua.github.io/dota-hero-checker/static/media/CHANGELOG.03aeedc7.md"
   },
   "entrypoints": [
     "static/js/runtime-main.1cc8d281.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.4b6ff0c4.chunk.js",
-    "static/css/main.8861167d.chunk.css",
-    "static/js/main.4373d77b.chunk.js"
+    "static/css/main.e6ce7d04.chunk.css",
+    "static/js/main.2a066bd1.chunk.js"
   ]
 }
