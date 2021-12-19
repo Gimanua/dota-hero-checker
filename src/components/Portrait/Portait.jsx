@@ -5,15 +5,16 @@ import classNames from 'classnames'
 import { CheckedHeroesContext } from '../CheckedHeroesProvider/CheckedHeroesProvider'
 import { SearchQueryContext } from '../SearchQueryProvider/SearchQueryProvider'
 
+const BASE_IMAGE_PATH = 'images'
+
 /**
  * A portrait of a hero
  * @param {Object} props
  * @param {String} props.name The name of the hero
  * @param {String} props.internalName The internal name of the hero
- * @param {String} props.imageSource The source of the image of the hero
  * @param {Boolean} props.interactable If the portrait should be clickable to toggle checked status
  */
-function Portrait ({ name, internalName, imageSource, interactable }) {
+function Portrait ({ name, internalName, interactable }) {
   const searchQuery = React.useContext(SearchQueryContext)
   const searchMatch = (function isMatch () {
     if (searchQuery.length === 0) return null
@@ -30,7 +31,12 @@ function Portrait ({ name, internalName, imageSource, interactable }) {
 
   return (
     <div className={portraitClasses} onClick={interactable ? () => { updateCheckedHero(internalName, !checked) } : undefined}>
-      <img className='Portrait-image' src={imageSource} alt={name} />
+      <picture>
+        <source srcSet={`${BASE_IMAGE_PATH}/avif/${internalName}.avif`} type='image/avif' />
+        <source srcSet={`${BASE_IMAGE_PATH}/webp/${internalName}.webp`} type='image/webp' />
+        <source srcSet={`${BASE_IMAGE_PATH}/jpeg/${internalName}.jpg`} type='image/jpeg' />
+        <img className='Portrait-image' src={`${BASE_IMAGE_PATH}/png/${internalName}.png`} alt={name} />
+      </picture>
       {checked && <img className='Portrait-checked' src={CheckImage} alt='Checkmark' />}
       <strong className='Portrait-name'>{name}</strong>
     </div>

@@ -1,612 +1,490 @@
 [
   {
     "internalName": "Abaddon",
-    "name": "Abaddon",
-    "imageSource": "images/abaddon.png"
+    "name": "Abaddon"
   },
   {
     "internalName": "Alchemist",
-    "name": "Alchemist",
-    "imageSource": "images/alchemist.png"
+    "name": "Alchemist"
   },
   {
     "internalName": "Ancient_apparition",
-    "name": "Ancient Apparition",
-    "imageSource": "images/ancient_apparition.png"
+    "name": "Ancient Apparition"
   },
   {
     "internalName": "Antimage",
-    "name": "Anti-Mage",
-    "imageSource": "images/antimage.png"
+    "name": "Anti-Mage"
   },
   {
     "internalName": "Arc_warden",
-    "name": "Arc Warden",
-    "imageSource": "images/arc_warden.png"
+    "name": "Arc Warden"
   },
   {
     "internalName": "Axe",
-    "name": "Axe",
-    "imageSource": "images/axe.png"
+    "name": "Axe"
   },
   {
     "internalName": "Bane",
-    "name": "Bane",
-    "imageSource": "images/bane.png"
+    "name": "Bane"
   },
   {
     "internalName": "Batrider",
-    "name": "Batrider",
-    "imageSource": "images/batrider.png"
+    "name": "Batrider"
   },
   {
     "internalName": "Beastmaster",
-    "name": "Beastmaster",
-    "imageSource": "images/beastmaster.png"
+    "name": "Beastmaster"
   },
   {
     "internalName": "Bloodseeker",
-    "name": "Bloodseeker",
-    "imageSource": "images/bloodseeker.png"
+    "name": "Bloodseeker"
   },
   {
     "internalName": "Bounty_hunter",
-    "name": "Bounty Hunter",
-    "imageSource": "images/bounty_hunter.png"
+    "name": "Bounty Hunter"
   },
   {
     "internalName": "Brewmaster",
-    "name": "Brewmaster",
-    "imageSource": "images/brewmaster.png"
+    "name": "Brewmaster"
   },
   {
     "internalName": "Bristleback",
-    "name": "Bristleback",
-    "imageSource": "images/bristleback.png"
+    "name": "Bristleback"
   },
   {
     "internalName": "Broodmother",
-    "name": "Broodmother",
-    "imageSource": "images/broodmother.png"
+    "name": "Broodmother"
   },
   {
     "internalName": "Centaur",
-    "name": "Centaur Warrunner",
-    "imageSource": "images/centaur.png"
+    "name": "Centaur Warrunner"
   },
   {
     "internalName": "Chaos_knight",
-    "name": "Chaos Knight",
-    "imageSource": "images/chaos_knight.png"
+    "name": "Chaos Knight"
   },
   {
     "internalName": "Chen",
-    "name": "Chen",
-    "imageSource": "images/chen.png"
+    "name": "Chen"
   },
   {
     "internalName": "Clinkz",
-    "name": "Clinkz",
-    "imageSource": "images/clinkz.png"
+    "name": "Clinkz"
   },
   {
     "internalName": "Rattletrap",
-    "name": "Clockwerk",
-    "imageSource": "images/rattletrap.png"
+    "name": "Clockwerk"
   },
   {
     "internalName": "Crystal_maiden",
-    "name": "Crystal Maiden",
-    "imageSource": "images/crystal_maiden.png"
+    "name": "Crystal Maiden"
   },
   {
     "internalName": "Dark_seer",
-    "name": "Dark Seer",
-    "imageSource": "images/dark_seer.png"
+    "name": "Dark Seer"
   },
   {
     "internalName": "Dark_willow",
-    "name": "Dark Willow",
-    "imageSource": "images/dark_willow.png"
+    "name": "Dark Willow"
   },
   {
     "internalName": "Dawnbreaker",
-    "name": "Dawnbreaker",
-    "imageSource": "images/dawnbreaker.png"
+    "name": "Dawnbreaker"
   },
   {
     "internalName": "Dazzle",
-    "name": "Dazzle",
-    "imageSource": "images/dazzle.png"
+    "name": "Dazzle"
   },
   {
     "internalName": "Death_prophet",
-    "name": "Death Prophet",
-    "imageSource": "images/death_prophet.png"
+    "name": "Death Prophet"
   },
   {
     "internalName": "Disruptor",
-    "name": "Disruptor",
-    "imageSource": "images/disruptor.png"
+    "name": "Disruptor"
   },
   {
     "internalName": "Doom_bringer",
-    "name": "Doom",
-    "imageSource": "images/doom_bringer.png"
+    "name": "Doom"
   },
   {
     "internalName": "Dragon_knight",
-    "name": "Dragon Knight",
-    "imageSource": "images/dragon_knight.png"
+    "name": "Dragon Knight"
   },
   {
     "internalName": "Drow_ranger",
-    "name": "Drow Ranger",
-    "imageSource": "images/drow_ranger.png"
+    "name": "Drow Ranger"
   },
   {
     "internalName": "Earth_spirit",
-    "name": "Earth Spirit",
-    "imageSource": "images/earth_spirit.png"
+    "name": "Earth Spirit"
   },
   {
     "internalName": "Earthshaker",
-    "name": "Earthshaker",
-    "imageSource": "images/earthshaker.png"
+    "name": "Earthshaker"
   },
   {
     "internalName": "Elder_titan",
-    "name": "Elder Titan",
-    "imageSource": "images/elder_titan.png"
+    "name": "Elder Titan"
   },
   {
     "internalName": "Ember_spirit",
-    "name": "Ember Spirit",
-    "imageSource": "images/ember_spirit.png"
+    "name": "Ember Spirit"
   },
   {
     "internalName": "Enchantress",
-    "name": "Enchantress",
-    "imageSource": "images/enchantress.png"
+    "name": "Enchantress"
   },
   {
     "internalName": "Enigma",
-    "name": "Enigma",
-    "imageSource": "images/enigma.png"
+    "name": "Enigma"
   },
   {
     "internalName": "Faceless_void",
-    "name": "Faceless Void",
-    "imageSource": "images/faceless_void.png"
+    "name": "Faceless Void"
   },
   {
     "internalName": "Grimstroke",
-    "name": "Grimstroke",
-    "imageSource": "images/grimstroke.png"
+    "name": "Grimstroke"
   },
   {
     "internalName": "Gyrocopter",
-    "name": "Gyrocopter",
-    "imageSource": "images/gyrocopter.png"
+    "name": "Gyrocopter"
   },
   {
     "internalName": "Hoodwink",
-    "name": "Hoodwink",
-    "imageSource": "images/hoodwink.png"
+    "name": "Hoodwink"
   },
   {
     "internalName": "Huskar",
-    "name": "Huskar",
-    "imageSource": "images/huskar.png"
+    "name": "Huskar"
   },
   {
     "internalName": "Invoker",
-    "name": "Invoker",
-    "imageSource": "images/invoker.png"
+    "name": "Invoker"
   },
   {
     "internalName": "Wisp",
-    "name": "Io",
-    "imageSource": "images/wisp.png"
+    "name": "Io"
   },
   {
     "internalName": "Jakiro",
-    "name": "Jakiro",
-    "imageSource": "images/jakiro.png"
+    "name": "Jakiro"
   },
   {
     "internalName": "Juggernaut",
-    "name": "Juggernaut",
-    "imageSource": "images/juggernaut.png"
+    "name": "Juggernaut"
   },
   {
     "internalName": "Keeper_of_the_light",
-    "name": "Keeper of the Light",
-    "imageSource": "images/keeper_of_the_light.png"
+    "name": "Keeper of the Light"
   },
   {
     "internalName": "Kunkka",
-    "name": "Kunkka",
-    "imageSource": "images/kunkka.png"
+    "name": "Kunkka"
   },
   {
     "internalName": "Legion_commander",
-    "name": "Legion Commander",
-    "imageSource": "images/legion_commander.png"
+    "name": "Legion Commander"
   },
   {
     "internalName": "Leshrac",
-    "name": "Leshrac",
-    "imageSource": "images/leshrac.png"
+    "name": "Leshrac"
   },
   {
     "internalName": "Lich",
-    "name": "Lich",
-    "imageSource": "images/lich.png"
+    "name": "Lich"
   },
   {
     "internalName": "Life_stealer",
-    "name": "Lifestealer",
-    "imageSource": "images/life_stealer.png"
+    "name": "Lifestealer"
   },
   {
     "internalName": "Lina",
-    "name": "Lina",
-    "imageSource": "images/lina.png"
+    "name": "Lina"
   },
   {
     "internalName": "Lion",
-    "name": "Lion",
-    "imageSource": "images/lion.png"
+    "name": "Lion"
   },
   {
     "internalName": "Lone_druid",
-    "name": "Lone Druid",
-    "imageSource": "images/lone_druid.png"
+    "name": "Lone Druid"
   },
   {
     "internalName": "Luna",
-    "name": "Luna",
-    "imageSource": "images/luna.png"
+    "name": "Luna"
   },
   {
     "internalName": "Lycan",
-    "name": "Lycan",
-    "imageSource": "images/lycan.png"
+    "name": "Lycan"
   },
   {
     "internalName": "Magnataur",
-    "name": "Magnus",
-    "imageSource": "images/magnataur.png"
+    "name": "Magnus"
   },
   {
     "internalName": "Marci",
-    "name": "Marci",
-    "imageSource": "images/marci.png"
+    "name": "Marci"
   },
   {
     "internalName": "Mars",
-    "name": "Mars",
-    "imageSource": "images/mars.png"
+    "name": "Mars"
   },
   {
     "internalName": "Medusa",
-    "name": "Medusa",
-    "imageSource": "images/medusa.png"
+    "name": "Medusa"
   },
   {
     "internalName": "Meepo",
-    "name": "Meepo",
-    "imageSource": "images/meepo.png"
+    "name": "Meepo"
   },
   {
     "internalName": "Mirana",
-    "name": "Mirana",
-    "imageSource": "images/mirana.png"
+    "name": "Mirana"
   },
   {
     "internalName": "Monkey_king",
-    "name": "Monkey King",
-    "imageSource": "images/monkey_king.png"
+    "name": "Monkey King"
   },
   {
     "internalName": "Morphling",
-    "name": "Morphling",
-    "imageSource": "images/morphling.png"
+    "name": "Morphling"
   },
   {
     "internalName": "Naga_siren",
-    "name": "Naga Siren",
-    "imageSource": "images/naga_siren.png"
+    "name": "Naga Siren"
   },
   {
     "internalName": "Furion",
-    "name": "Nature's Prophet",
-    "imageSource": "images/furion.png"
+    "name": "Nature's Prophet"
   },
   {
     "internalName": "Necrolyte",
-    "name": "Necrophos",
-    "imageSource": "images/necrolyte.png"
+    "name": "Necrophos"
   },
   {
     "internalName": "Night_stalker",
-    "name": "Night Stalker",
-    "imageSource": "images/night_stalker.png"
+    "name": "Night Stalker"
   },
   {
     "internalName": "Nyx_assassin",
-    "name": "Nyx Assassin",
-    "imageSource": "images/nyx_assassin.png"
+    "name": "Nyx Assassin"
   },
   {
     "internalName": "Ogre_magi",
-    "name": "Ogre Magi",
-    "imageSource": "images/ogre_magi.png"
+    "name": "Ogre Magi"
   },
   {
     "internalName": "Omniknight",
-    "name": "Omniknight",
-    "imageSource": "images/omniknight.png"
+    "name": "Omniknight"
   },
   {
     "internalName": "Oracle",
-    "name": "Oracle",
-    "imageSource": "images/oracle.png"
+    "name": "Oracle"
   },
   {
     "internalName": "Obsidian_destroyer",
-    "name": "Outworld Destroyer",
-    "imageSource": "images/obsidian_destroyer.png"
+    "name": "Outworld Destroyer"
   },
   {
     "internalName": "Pangolier",
-    "name": "Pangolier",
-    "imageSource": "images/pangolier.png"
+    "name": "Pangolier"
   },
   {
     "internalName": "Phantom_assassin",
-    "name": "Phantom Assassin",
-    "imageSource": "images/phantom_assassin.png"
+    "name": "Phantom Assassin"
   },
   {
     "internalName": "Phantom_lancer",
-    "name": "Phantom Lancer",
-    "imageSource": "images/phantom_lancer.png"
+    "name": "Phantom Lancer"
   },
   {
     "internalName": "Phoenix",
-    "name": "Phoenix",
-    "imageSource": "images/phoenix.png"
+    "name": "Phoenix"
   },
   {
     "internalName": "Puck",
-    "name": "Puck",
-    "imageSource": "images/puck.png"
+    "name": "Puck"
   },
   {
     "internalName": "Pudge",
-    "name": "Pudge",
-    "imageSource": "images/pudge.png"
+    "name": "Pudge"
   },
   {
     "internalName": "Pugna",
-    "name": "Pugna",
-    "imageSource": "images/pugna.png"
+    "name": "Pugna"
   },
   {
     "internalName": "Queenofpain",
-    "name": "Queen of Pain",
-    "imageSource": "images/queenofpain.png"
+    "name": "Queen of Pain"
   },
   {
     "internalName": "Razor",
-    "name": "Razor",
-    "imageSource": "images/razor.png"
+    "name": "Razor"
   },
   {
     "internalName": "Riki",
-    "name": "Riki",
-    "imageSource": "images/riki.png"
+    "name": "Riki"
   },
   {
     "internalName": "Rubick",
-    "name": "Rubick",
-    "imageSource": "images/rubick.png"
+    "name": "Rubick"
   },
   {
     "internalName": "Sand_king",
-    "name": "Sand King",
-    "imageSource": "images/sand_king.png"
+    "name": "Sand King"
   },
   {
     "internalName": "Shadow_demon",
-    "name": "Shadow Demon",
-    "imageSource": "images/shadow_demon.png"
+    "name": "Shadow Demon"
   },
   {
     "internalName": "Nevermore",
-    "name": "Shadow Fiend",
-    "imageSource": "images/nevermore.png"
+    "name": "Shadow Fiend"
   },
   {
     "internalName": "Shadow_shaman",
-    "name": "Shadow Shaman",
-    "imageSource": "images/shadow_shaman.png"
+    "name": "Shadow Shaman"
   },
   {
     "internalName": "Silencer",
-    "name": "Silencer",
-    "imageSource": "images/silencer.png"
+    "name": "Silencer"
   },
   {
     "internalName": "Skywrath_mage",
-    "name": "Skywrath Mage",
-    "imageSource": "images/skywrath_mage.png"
+    "name": "Skywrath Mage"
   },
   {
     "internalName": "Slardar",
-    "name": "Slardar",
-    "imageSource": "images/slardar.png"
+    "name": "Slardar"
   },
   {
     "internalName": "Slark",
-    "name": "Slark",
-    "imageSource": "images/slark.png"
+    "name": "Slark"
   },
   {
     "internalName": "Snapfire",
-    "name": "Snapfire",
-    "imageSource": "images/snapfire.png"
+    "name": "Snapfire"
   },
   {
     "internalName": "Sniper",
-    "name": "Sniper",
-    "imageSource": "images/sniper.png"
+    "name": "Sniper"
   },
   {
     "internalName": "Spectre",
-    "name": "Spectre",
-    "imageSource": "images/spectre.png"
+    "name": "Spectre"
   },
   {
     "internalName": "Spirit_breaker",
-    "name": "Spirit Breaker",
-    "imageSource": "images/spirit_breaker.png"
+    "name": "Spirit Breaker"
   },
   {
     "internalName": "Storm_spirit",
-    "name": "Storm Spirit",
-    "imageSource": "images/storm_spirit.png"
+    "name": "Storm Spirit"
   },
   {
     "internalName": "Sven",
-    "name": "Sven",
-    "imageSource": "images/sven.png"
+    "name": "Sven"
   },
   {
     "internalName": "Techies",
-    "name": "Techies",
-    "imageSource": "images/techies.png"
+    "name": "Techies"
   },
   {
     "internalName": "Templar_assassin",
-    "name": "Templar Assassin",
-    "imageSource": "images/templar_assassin.png"
+    "name": "Templar Assassin"
   },
   {
     "internalName": "Terrorblade",
-    "name": "Terrorblade",
-    "imageSource": "images/terrorblade.png"
+    "name": "Terrorblade"
   },
   {
     "internalName": "Tidehunter",
-    "name": "Tidehunter",
-    "imageSource": "images/tidehunter.png"
+    "name": "Tidehunter"
   },
   {
     "internalName": "Shredder",
-    "name": "Timbersaw",
-    "imageSource": "images/shredder.png"
+    "name": "Timbersaw"
   },
   {
     "internalName": "Tinker",
-    "name": "Tinker",
-    "imageSource": "images/tinker.png"
+    "name": "Tinker"
   },
   {
     "internalName": "Tiny",
-    "name": "Tiny",
-    "imageSource": "images/tiny.png"
+    "name": "Tiny"
   },
   {
     "internalName": "Treant",
-    "name": "Treant Protector",
-    "imageSource": "images/treant.png"
+    "name": "Treant Protector"
   },
   {
     "internalName": "Troll_warlord",
-    "name": "Troll Warlord",
-    "imageSource": "images/troll_warlord.png"
+    "name": "Troll Warlord"
   },
   {
     "internalName": "Tusk",
-    "name": "Tusk",
-    "imageSource": "images/tusk.png"
+    "name": "Tusk"
   },
   {
     "internalName": "Abyssal_underlord",
-    "name": "Underlord",
-    "imageSource": "images/abyssal_underlord.png"
+    "name": "Underlord"
   },
   {
     "internalName": "Undying",
-    "name": "Undying",
-    "imageSource": "images/undying.png"
+    "name": "Undying"
   },
   {
     "internalName": "Ursa",
-    "name": "Ursa",
-    "imageSource": "images/ursa.png"
+    "name": "Ursa"
   },
   {
     "internalName": "Vengefulspirit",
-    "name": "Vengeful Spirit",
-    "imageSource": "images/vengefulspirit.png"
+    "name": "Vengeful Spirit"
   },
   {
     "internalName": "Venomancer",
-    "name": "Venomancer",
-    "imageSource": "images/venomancer.png"
+    "name": "Venomancer"
   },
   {
     "internalName": "Viper",
-    "name": "Viper",
-    "imageSource": "images/viper.png"
+    "name": "Viper"
   },
   {
     "internalName": "Visage",
-    "name": "Visage",
-    "imageSource": "images/visage.png"
+    "name": "Visage"
   },
   {
     "internalName": "Void_spirit",
-    "name": "Void Spirit",
-    "imageSource": "images/void_spirit.png"
+    "name": "Void Spirit"
   },
   {
     "internalName": "Warlock",
-    "name": "Warlock",
-    "imageSource": "images/warlock.png"
+    "name": "Warlock"
   },
   {
     "internalName": "Weaver",
-    "name": "Weaver",
-    "imageSource": "images/weaver.png"
+    "name": "Weaver"
   },
   {
     "internalName": "Windrunner",
-    "name": "Windranger",
-    "imageSource": "images/windrunner.png"
+    "name": "Windranger"
   },
   {
     "internalName": "Winter_wyvern",
-    "name": "Winter Wyvern",
-    "imageSource": "images/winter_wyvern.png"
+    "name": "Winter Wyvern"
   },
   {
     "internalName": "Witch_doctor",
-    "name": "Witch Doctor",
-    "imageSource": "images/witch_doctor.png"
+    "name": "Witch Doctor"
   },
   {
     "internalName": "Skeleton_king",
-    "name": "Wraith King",
-    "imageSource": "images/skeleton_king.png"
+    "name": "Wraith King"
   },
   {
     "internalName": "Zuus",
-    "name": "Zeus",
-    "imageSource": "images/zuus.png"
+    "name": "Zeus"
   }
 ]

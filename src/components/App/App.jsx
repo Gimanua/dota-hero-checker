@@ -36,7 +36,6 @@ function App () {
           key={hero.name}
           name={hero.name}
           internalName={hero.internalName}
-          imageSource={hero.imageSource}
           interactable
         />))}
       {randomHero != null &&
@@ -44,7 +43,6 @@ function App () {
           <Portrait
             name={randomHero.name}
             internalName={randomHero.internalName}
-            imageSource={randomHero.imageSource}
             interactable={false}
           />
         </Modal>}
