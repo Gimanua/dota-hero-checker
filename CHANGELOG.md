@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.1] - 2021-12-19
+### Changed
+- **TL;DR: Images load faster.** Instead of always serving png images for the hero portraits, the browser will first try to download it in a more modern and compressed format in this order: avif, webp, jpeg. Only continuing if it's unable to interpret the format. 
+
 ## [1.5.0] - 2021-12-05
 ### Added
 - Text displaying what your current search query is. Gradually fades out during 1.5 seconds to match the timeout of the search query.
