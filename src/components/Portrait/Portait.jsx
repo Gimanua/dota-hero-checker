@@ -29,13 +29,14 @@ function Portrait ({ name, internalName, interactable }) {
     'Portrait--searchMiss': searchQuery && searchMatch === false
   })
 
+  const lowerCaseInternalName = internalName.toLowerCase()
   return (
     <div className={portraitClasses} onClick={interactable ? () => { updateCheckedHero(internalName, !checked) } : undefined}>
       <picture>
-        <source srcSet={`${BASE_IMAGE_PATH}/avif/${internalName}.avif`} type='image/avif' />
-        <source srcSet={`${BASE_IMAGE_PATH}/webp/${internalName}.webp`} type='image/webp' />
-        <source srcSet={`${BASE_IMAGE_PATH}/jpeg/${internalName}.jpg`} type='image/jpeg' />
-        <img className='Portrait-image' src={`${BASE_IMAGE_PATH}/png/${internalName}.png`} alt={name} />
+        <source srcSet={`${BASE_IMAGE_PATH}/avif/${lowerCaseInternalName}.avif`} type='image/avif' />
+        <source srcSet={`${BASE_IMAGE_PATH}/webp/${lowerCaseInternalName}.webp`} type='image/webp' />
+        <source srcSet={`${BASE_IMAGE_PATH}/jpeg/${lowerCaseInternalName}.jpg`} type='image/jpeg' />
+        <img className='Portrait-image' src={`${BASE_IMAGE_PATH}/png/${lowerCaseInternalName}.png`} alt={name} />
       </picture>
       {checked && <img className='Portrait-checked' src={CheckImage} alt='Checkmark' />}
       <strong className='Portrait-name'>{name}</strong>
