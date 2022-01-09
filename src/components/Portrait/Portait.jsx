@@ -5,7 +5,12 @@ import classNames from 'classnames'
 import { CheckedHeroesContext } from '../CheckedHeroesProvider/CheckedHeroesProvider'
 import { SearchQueryContext } from '../SearchQueryProvider/SearchQueryProvider'
 
-const BASE_IMAGE_PATH = 'images'
+const BASE_HEROES_IMAGE_PATH = 'images/heroes'
+const IMAGE_SIZES = Object.freeze({
+  small: 64,
+  medium: 128,
+  large: 256
+})
 
 /**
  * A portrait of a hero
@@ -30,13 +35,28 @@ function Portrait ({ name, internalName, interactable }) {
   })
 
   const lowerCaseInternalName = internalName.toLowerCase()
+  const [avifSrcSet, webpSrcSet, jpegSrcSet] = (function generateSrcSets () {
+    const avifSrcSets = []
+    const webpSrcSets = []
+    const jpegSrcSets = []
+    for (const [imageSize, imageWidth] of Object.entries(IMAGE_SIZES)) {
+      avifSrcSets.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.avif ${imageWidth}w`)
+      webpSrcSets.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.webp ${imageWidth}w`)
+      jpegSrcSets.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.jpg ${imageWidth}w`)
+    }
+    return [avifSrcSets.join(', '), webpSrcSets.join(', '), jpegSrcSets.join(', ')]
+  }())
+  const pngSrc = `${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}.png`
+
+  // The "sizes" attribute on the "source" elements must match the width it will be displayed at,
+  // this value therefore needs to match whatever value is specified in the CSS so double check before changing!
   return (
     <div className={portraitClasses} onClick={interactable ? () => { updateCheckedHero(internalName, !checked) } : undefined}>
       <picture>
-        <source srcSet={`${BASE_IMAGE_PATH}/avif/${lowerCaseInternalName}.avif`} type='image/avif' />
-        <source srcSet={`${BASE_IMAGE_PATH}/webp/${lowerCaseInternalName}.webp`} type='image/webp' />
-        <source srcSet={`${BASE_IMAGE_PATH}/jpeg/${lowerCaseInternalName}.jpg`} type='image/jpeg' />
-        <img className='Portrait-image' src={`${BASE_IMAGE_PATH}/png/${lowerCaseInternalName}.png`} alt={name} />
+        <source type='image/avif' srcSet={avifSrcSet} sizes='8vw' />
+        <source type='image/webp' srcSet={webpSrcSet} sizes='8vw' />
+        <source type='image/jpeg' srcSet={jpegSrcSet} sizes='8vw' />
+        <img className='Portrait-image' src={pngSrc} alt={name} />
       </picture>
       {checked && <img className='Portrait-checked' src={CheckImage} alt='Checkmark' />}
       <strong className='Portrait-name'>{name}</strong>

@@ -1,8 +1,10 @@
 import './Header.css'
 import React from 'react'
 import { getAllHeroes } from '../../utils'
-import { version } from '../../../package.json'
+import packageInfo from '../../../package.json'
 import { CheckedHeroesContext } from '../CheckedHeroesProvider/CheckedHeroesProvider'
+
+const { version } = packageInfo
 
 /**
  * Page header
