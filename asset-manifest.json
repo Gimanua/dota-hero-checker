@@ -1,24 +1,14 @@
 {
   "files": {
-    "main.css": "https://gimanua.github.io/dota-hero-checker/static/css/main.e6ce7d04.chunk.css",
-    "main.js": "https://gimanua.github.io/dota-hero-checker/static/js/main.18333e7b.chunk.js",
-    "main.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/main.18333e7b.chunk.js.map",
-    "runtime-main.js": "https://gimanua.github.io/dota-hero-checker/static/js/runtime-main.1cc8d281.js",
-    "runtime-main.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/runtime-main.1cc8d281.js.map",
-    "static/css/2.679831fc.chunk.css": "https://gimanua.github.io/dota-hero-checker/static/css/2.679831fc.chunk.css",
-    "static/js/2.4b6ff0c4.chunk.js": "https://gimanua.github.io/dota-hero-checker/static/js/2.4b6ff0c4.chunk.js",
-    "static/js/2.4b6ff0c4.chunk.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/2.4b6ff0c4.chunk.js.map",
+    "main.css": "https://gimanua.github.io/dota-hero-checker/static/css/main.2089abc0.css",
+    "main.js": "https://gimanua.github.io/dota-hero-checker/static/js/main.9069e94d.js",
+    "static/media/CHANGELOG.md": "https://gimanua.github.io/dota-hero-checker/static/media/CHANGELOG.625faf3a81216860ae5a.md",
     "index.html": "https://gimanua.github.io/dota-hero-checker/index.html",
-    "static/css/2.679831fc.chunk.css.map": "https://gimanua.github.io/dota-hero-checker/static/css/2.679831fc.chunk.css.map",
-    "static/css/main.e6ce7d04.chunk.css.map": "https://gimanua.github.io/dota-hero-checker/static/css/main.e6ce7d04.chunk.css.map",
-    "static/js/2.4b6ff0c4.chunk.js.LICENSE.txt": "https://gimanua.github.io/dota-hero-checker/static/js/2.4b6ff0c4.chunk.js.LICENSE.txt",
-    "static/media/CHANGELOG.625faf3a.md": "https://gimanua.github.io/dota-hero-checker/static/media/CHANGELOG.625faf3a.md"
+    "main.2089abc0.css.map": "https://gimanua.github.io/dota-hero-checker/static/css/main.2089abc0.css.map",
+    "main.9069e94d.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/main.9069e94d.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.1cc8d281.js",
-    "static/css/2.679831fc.chunk.css",
-    "static/js/2.4b6ff0c4.chunk.js",
-    "static/css/main.e6ce7d04.chunk.css",
-    "static/js/main.18333e7b.chunk.js"
+    "static/css/main.2089abc0.css",
+    "static/js/main.9069e94d.js"
   ]
 }
