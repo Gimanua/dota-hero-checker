@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2022-01-19
+### Added
+- PNG images as sources for the browser to choose from when not supporting AVIF, WEBP or JPEG.
+
+### Changed
+- A search can no longer begin with a white space.
+- It's no longer possible to append a white space to the search query if the query already ends with a white space.
+- The Escape key will now clear the current search even if it hasn't timed out.
+- Non-printable keys (except Escape and Backspace) will no longer clear the search.
+- Pressing spacebar will no longer scroll down the page.
+- The styling of the action buttons (Random Unchecked Hero, Export and Import) with orange background and margins between eachother.
+
+### Fixed
+- The backup src for legacy browser of every hero image had a faulty URL.
+
 ## [1.5.3] - 2022-01-09
 ### Added
 - Different sizes of every hero image, letting the browser download the best fit automatically and thus reducing load time.
