@@ -35,18 +35,20 @@ function Portrait ({ name, internalName, interactable }) {
   })
 
   const lowerCaseInternalName = internalName.toLowerCase()
-  const [avifSrcSet, webpSrcSet, jpegSrcSet] = (function generateSrcSets () {
-    const avifSrcSets = []
-    const webpSrcSets = []
-    const jpegSrcSets = []
+  const [avifSrcSet, webpSrcSet, jpegSrcSet, pngSrcSet] = (function generateSrcSets () {
+    const avifSources = []
+    const webpSources = []
+    const jpegSources = []
+    const pngSources = []
     for (const [imageSize, imageWidth] of Object.entries(IMAGE_SIZES)) {
-      avifSrcSets.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.avif ${imageWidth}w`)
-      webpSrcSets.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.webp ${imageWidth}w`)
-      jpegSrcSets.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.jpg ${imageWidth}w`)
+      avifSources.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.avif ${imageWidth}w`)
+      webpSources.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.webp ${imageWidth}w`)
+      jpegSources.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.jpg ${imageWidth}w`)
+      pngSources.push(`${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-${imageSize}.png ${imageWidth}w`)
     }
-    return [avifSrcSets.join(', '), webpSrcSets.join(', '), jpegSrcSets.join(', ')]
+    return [avifSources.join(', '), webpSources.join(', '), jpegSources.join(', '), pngSources.join(', ')]
   }())
-  const pngSrc = `${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}.png`
+  const defaultImageSrc = `${BASE_HEROES_IMAGE_PATH}/${lowerCaseInternalName}-large.png`
 
   // The "sizes" attribute on the "source" elements must match the width it will be displayed at,
   // this value therefore needs to match whatever value is specified in the CSS so double check before changing!
@@ -56,7 +58,8 @@ function Portrait ({ name, internalName, interactable }) {
         <source type='image/avif' srcSet={avifSrcSet} sizes='8vw' />
         <source type='image/webp' srcSet={webpSrcSet} sizes='8vw' />
         <source type='image/jpeg' srcSet={jpegSrcSet} sizes='8vw' />
-        <img className='Portrait-image' src={pngSrc} alt={name} />
+        <source type='image/png' srcSet={pngSrcSet} sizes='8vw' />
+        <img className='Portrait-image' src={defaultImageSrc} alt={name} />
       </picture>
       {checked && <img className='Portrait-checked' src={CheckImage} alt='Checkmark' />}
       <strong className='Portrait-name'>{name}</strong>
