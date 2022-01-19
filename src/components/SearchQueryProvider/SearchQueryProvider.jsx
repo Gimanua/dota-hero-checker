@@ -35,6 +35,7 @@ function SearchQueryProvider ({ children }) {
      * @param {KeyboardEvent} e
      */
     function handleKeyDown (e) {
+      e.preventDefault()
       clearTimeout(keyTimeoutId)
       dispatchSearchQuery({ timedOut, key: e.key })
 
