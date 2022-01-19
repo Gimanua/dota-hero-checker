@@ -11,6 +11,7 @@
   z-index: 1;
   pointer-events: none;
   animation: fadeOut 1.5s ease-in forwards;
+  white-space: pre;
 }
 
 @keyframes fadeOut {
