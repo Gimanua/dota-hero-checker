@@ -3,16 +3,30 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 2vh;
 }
 
 .Header-projectVersion {
   cursor: pointer;
-  color: blue;
+  color: #80C0FF;
 }
 
 .Header-actions {
   display: flex;
+  gap: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.Header-actionButton {
+  padding: 0.5em;
+  font-weight: bold;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 0.5em;
+}
+
+.Header-actionButton:active {
+  border: 1px solid white;
 }
 
 .Header-actionButton-export {
