@@ -35,6 +35,42 @@ export function getAllHeroes () {
  * Determines if a key is printable, some keys like Caps Lock and Shift are not themselves printable
  * @param {String} key
  */
-export function isPrintableKey (key) {
+function isPrintableKey (key) {
   return key.length === 1
+}
+
+/**
+ * Determines if a key is the spacebar key
+ * @param {String} key
+ */
+function isSpaceKey (key) {
+  return key === ' '
+}
+
+/**
+ * Determines if a key is the backspace key
+ * @param {String} key
+ */
+function isBackspaceKey (key) {
+  return key === 'Backspace'
+}
+
+/**
+ * Determines if a key is the escape key
+ * @param {String} key
+ */
+function isEscapeKey (key) {
+  return key === 'Escape'
+}
+
+/**
+ * Determines what kind of key a key press was
+ * @param {String} key
+ */
+export function getKeyType (key) {
+  if (isSpaceKey(key)) return 'space'
+  if (isBackspaceKey(key)) return 'backspace'
+  if (isEscapeKey(key)) return 'escape'
+  if (isPrintableKey(key)) return 'character'
+  return 'special'
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { isPrintableKey } from '../../utils'
+import { getKeyType } from '../../utils'
 
 const SEARCH_KEY_TIMEOUT_MS = 1500
 /**
@@ -14,13 +14,21 @@ const SearchQueryContext = React.createContext()
  * @param {String} action.key
  */
 function reduceSearchQuery (state, { timedOut, key }) {
-  if (timedOut) {
-    if (isPrintableKey(key)) return key.toLowerCase()
-    return ''
+  switch (getKeyType(key)) {
+    case 'backspace':
+      if (timedOut) return ''
+      return state.slice(0, -1)
+    case 'character':
+      if (timedOut) return key.toLowerCase()
+      return state + key.toLowerCase()
+    case 'escape':
+      return ''
+    case 'space':
+      if (state === '') return ''
+      if (state.endsWith(' ')) return state
+      return state + key.toLowerCase()
+    default: return state
   }
-  if (key === 'Backspace') return state.slice(0, -1)
-  if (isPrintableKey(key)) return state + key.toLowerCase()
-  return state
 }
 
 function SearchQueryProvider ({ children }) {
