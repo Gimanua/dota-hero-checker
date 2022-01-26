@@ -43,7 +43,7 @@ function isPrintableKey (key) {
  * Determines if a key is the spacebar key
  * @param {String} key
  */
-function isSpaceKey (key) {
+export function isSpaceKey (key) {
   return key === ' '
 }
 

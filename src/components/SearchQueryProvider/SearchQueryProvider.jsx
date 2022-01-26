@@ -1,5 +1,5 @@
 import React from 'react'
-import { getKeyType } from '../../utils'
+import { getKeyType, isSpaceKey } from '../../utils'
 
 const SEARCH_KEY_TIMEOUT_MS = 1500
 /**
@@ -43,7 +43,9 @@ function SearchQueryProvider ({ children }) {
      * @param {KeyboardEvent} e
      */
     function handleKeyDown (e) {
-      e.preventDefault()
+      if (isSpaceKey(e.key)) {
+        e.preventDefault()
+      }
       clearTimeout(keyTimeoutId)
       dispatchSearchQuery({ timedOut, key: e.key })
 
