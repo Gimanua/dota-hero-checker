@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://gimanua.github.io/dota-hero-checker/static/css/main.54640766.css",
-    "main.js": "https://gimanua.github.io/dota-hero-checker/static/js/main.33a7c214.js",
-    "static/media/CHANGELOG.md": "https://gimanua.github.io/dota-hero-checker/static/media/CHANGELOG.8637d51d6961e81adeaa.md",
+    "main.js": "https://gimanua.github.io/dota-hero-checker/static/js/main.5da5562b.js",
+    "static/media/CHANGELOG.md": "https://gimanua.github.io/dota-hero-checker/static/media/CHANGELOG.8f5845dcd0ac9c9cc498.md",
     "index.html": "https://gimanua.github.io/dota-hero-checker/index.html",
     "main.54640766.css.map": "https://gimanua.github.io/dota-hero-checker/static/css/main.54640766.css.map",
-    "main.33a7c214.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/main.33a7c214.js.map"
+    "main.5da5562b.js.map": "https://gimanua.github.io/dota-hero-checker/static/js/main.5da5562b.js.map"
   },
   "entrypoints": [
     "static/css/main.54640766.css",
-    "static/js/main.33a7c214.js"
+    "static/js/main.5da5562b.js"
   ]
 }
