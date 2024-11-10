@@ -31,6 +31,13 @@ function Header ({ onRandomUncheckedHero, onVersionClick }) {
     onRandomUncheckedHero(randomUncheckedHero)
   }
 
+  function clearCheckedHeroes () {
+    const confirm = window.confirm('Are you sure you want to clear your checked heroes?')
+    if (confirm === false) { return }
+
+    setCheckedHeroesFromArray([])
+  }
+
   function checkedHeroesAsData () {
     const checkedHeroesAsArray = [...checkedHeroes]
     const base64 = window.btoa(JSON.stringify(checkedHeroesAsArray, null, 2))
@@ -84,6 +91,7 @@ function Header ({ onRandomUncheckedHero, onVersionClick }) {
       <h2>{checkedHeroesCount} / {totalHeroesCount} checked heroes ({hasDecimals ? roundPercentage(percentageChecked) : percentageChecked}%)</h2>
       <div className='Header-actions'>
         <button className='Header-actionButton' onClick={() => { randomUncheckedHero() }}>Random Unchecked Hero</button>
+        <button className='Header-actionButton' onClick={() => { clearCheckedHeroes() }}>Clear</button>
         <button className='Header-actionButton' onClick={() => { clickExportElement() }}>
           Export
           <a
